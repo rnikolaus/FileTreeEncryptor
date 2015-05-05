@@ -150,8 +150,11 @@ public class MainGui extends javax.swing.JFrame {
             crypt.work();
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, ex, "error", JOptionPane.ERROR_MESSAGE);
+            ex.printStackTrace();
         }
         JOptionPane.showMessageDialog(this,"Finished!" );
+        System.exit(0);
+        
 
 
     }//GEN-LAST:event_runButtonActionPerformed
