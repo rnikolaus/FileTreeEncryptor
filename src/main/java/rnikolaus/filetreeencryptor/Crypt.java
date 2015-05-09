@@ -155,8 +155,8 @@ public class Crypt {
             }
         } else {
             for (Path subpath : path) {
-                final String supPathName = subpath.getFileName().toString();
-                byte[] res = cipher.get().doFinal(decoder.get().decode(supPathName.getBytes()));
+                final String subPathName = subpath.getFileName().toString();
+                byte[] res = cipher.get().doFinal(decoder.get().decode(subPathName.getBytes()));
                 pathList.add(new String(res));
             }
         }
